@@ -65,7 +65,7 @@ if uploaded_file is not None:
     if continue_or_upload == "Upload New File":
         st.session_state.uploaded_file = None
         st.session_state.pdf_text = None
-        st.experimental_rerun()  # Restart app to upload a new file
+        st.rerun()  # Restart app to upload a new file
 
     # Step 5: Ask the user to enter a query based on the uploaded PDF
     if st.session_state.uploaded_file is not None:
